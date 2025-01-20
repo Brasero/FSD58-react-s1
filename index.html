@@ -12,61 +12,24 @@
 <div id="root"></div>
 <script type="text/babel">
 
- //Créez deux composants et affichez pour chaque étudiant son nom et sa moyenne dans une liste ul/li.
- //Le composant App déclarera la liste et rendra des composants Student
+ //Créez un composant Clock qui affichera Heures, minutes et seconde qui défile.
 
-
- const Student = ({student}) => {
-
-  const moy = Math.floor((student.notes.reduce((acc, curr) => acc + curr, 0) / student.notes.length) * 100) / 100
-
-  return (
-   <div>
-    <div> Nom : {student.name} </div>
-    <div>Moyenne : {moy} / 20</div>
-   </div>
-  )
- }
 
  const App = () => {
 
-  const students = [
-   {
-    notes: [12, 11, 10],
-    name: "Alan"
-   },
-   {
-    notes: [18, 10, 19],
-    name: "Alice"
-   },
-   {
-    notes: [10, 9, 11],
-    name: "Bernard"
-   },
-   {
-    notes: [11, 17, 19],
-    name: "Sophie"
-   },
-  ];
 
   return (
-   <ul>
-    {
-     students.map((student, i) => {
-      return <Student student={student} key={i} />
-     })
-    }
-   </ul>
+
   )
  }
 
 
- ReactDOM.createRoot(
+ const root = ReactDOM.createRoot(
   document.querySelector("#root")
  )
-  .render(
-   <App/>
-  )
+
+ setInterval(root.render(), 1000)
+
 </script>
 </body>
 </html>
