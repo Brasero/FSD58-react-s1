@@ -1,8 +1,5 @@
-# React + Vite
+# Exercice counter + / -
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Créez deux boutons le premier incremente le compteur de + 1 et l'autre de moins -1. Affichez ce dernier dans le DOM.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Faites en sorte que l'on ne puisse pas décrémenter en dessous de la valeur 0. Affichez un message d'avertissement sous le compteur pour le signaler lorsque l'utilisateur décrémente en dessous de 0. Pour l'implémentation de cette spécificité appliquez les bonnes pratiques UX.
