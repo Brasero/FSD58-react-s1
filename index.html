@@ -12,42 +12,22 @@
   <div id="root"></div>
   <script type="text/babel">
 
-
-   const Item = (props) => {
+   const Number = ({num}) => {
     return (
-     <li>{props.value}</li>
+     <div>{num**3}</div>
     )
    }
+   const App = () => {
 
-   const Home = (props) => {
-
-    const elems = [1, 2, 3, 4, 5, 6];
+    const numbers = [ 4, 3, 7 ];
 
     return (
      <div>
-      <span>{props.title}</span>
-      <div>{props.subtitle}</div>
-      <ul>
-       {
-        elems.map((val, i) => {
-         return <Item value={val} key={i} />
-        })
-       }
-      </ul>
-     </div>
-    )
-   }
-
-   const Main = ({subtitle}) => {
-
-    const title = "Coucou"
-
-    return (
-     <div style={{
-      color: "red",
-      borderBottom: "1px solid red"
-     }}>
-      <Home title={title} subtitle={subtitle} />
+      {
+       numbers.map((num, i) => {
+        return <Number num={num} key={i} />
+       })
+      }
      </div>
     )
    }
@@ -57,7 +37,7 @@
      document.querySelector("#root")
     )
      .render(
-        <Main subtitle={"coucou sous titre"} toto={"tata"} />
+        <App />
      )
   </script>
 </body>
