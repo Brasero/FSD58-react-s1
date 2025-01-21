@@ -1,5 +1,13 @@
-# Exercice counter + / -
+# Challenge 01 Counter
 
-### Créez deux boutons le premier incremente le compteur de + 1 et l'autre de moins -1. Affichez ce dernier dans le DOM.
+Créez deux compteurs (composants) qui se déclenchent à l'aide d'un bouton start. Le premier compteur s'incrémente de +1, le deuxième compteur s'incrémente de +2. Vous pouvez jouer avec les props des composants pour fixer la valeur de l'incrémentation, chaque composant aura ainsi sa propre configuration.
 
-### Faites en sorte que l'on ne puisse pas décrémenter en dessous de la valeur 0. Affichez un message d'avertissement sous le compteur pour le signaler lorsque l'utilisateur décrémente en dessous de 0. Pour l'implémentation de cette spécificité appliquez les bonnes pratiques UX.
+Associez pour chaque compteur un bouton stop qui permet d'arrêter le compteur correspondant.
+
+Mettez une propriété disabled sur le start et le stop, disabled sera placé sur stop si on n'a pas appuyé sur start et réciproquement.
+
+Options possibles à notre exercice
+
+1. Les compteurs doivent tous s'arrêter lorsqu'ils atteignent 20, vous pouvez soit tout ré-initialiser, soit arrêter le compteur et laisser la valeur 20 affichée.
+
+2. Si vous avez le temps développer un compteur cyclique et un compteur binaire.
