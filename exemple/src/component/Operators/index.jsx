@@ -1,35 +1,58 @@
 // path: exemple/src/component/Operators/index.jsx
 import "./style.scss";
 
-const Operators = () => {
+const Operators = ({dispatch}) => {
  
  const operators = [
   {
    sign: "+",
-   action: () => {}
+   action: () => {
+    dispatch({
+     type: "SET_OPERATOR",
+     payload: "+"
+    })
+   }
   },
   {
    sign: "x",
-   action: () => {}
+   action: () => {
+    dispatch({
+     type: "SET_OPERATOR",
+     payload: "*"
+    })
+   }
   },
   {
    sign: "-",
-   action: () => {}
+   action: () => {
+    dispatch({
+     type: "SET_OPERATOR",
+     payload: "-"
+    })
+   }
   },
   {
    sign: "=",
-   action: () => {}
+   action: () => {
+    dispatch({
+     type: "CALC"
+    })
+   }
   },
   {
    sign: "C",
-   action: () => {}
+   action: () => {
+    dispatch({
+     type: "RESET"
+    })
+   }
   },
  ]
  
  return (
   <div className="Operators">
    {
-    operators.map((obj, i) => <button>{obj.sign}</button>)
+    operators.map((obj, i) => <button key={i} onClick={obj.action}>{obj.sign}</button>)
    }
   </div>
  )

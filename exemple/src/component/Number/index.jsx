@@ -1,10 +1,17 @@
 // path: exemple/src/component/Number/index.jsx
 import "./style.scss";
 
-const Number = ({num}) => {
+const Number = ({num, dispatch}) => {
+ 
+ const handleClick = () => {
+  dispatch({
+   type: "SET_VALUE",
+   payload: num
+  })
+ }
  
  return (
-  <button className="Number">
+  <button onClick={handleClick} className="Number">
    {num}
   </button>
  )

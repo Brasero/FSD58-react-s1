@@ -1,11 +1,11 @@
 // path: exemple/src/component/Display/index.jsx
 import "./style.scss";
 
-const Display = () => {
+const Display = ({display}) => {
  
  return (
   <div className="Display">
-    <span>{0}</span>
+    <span>{display || 0}</span>
   </div>
  )
 }
