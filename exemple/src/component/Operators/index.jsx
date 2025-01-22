@@ -1,7 +1,10 @@
 // path: exemple/src/component/Operators/index.jsx
 import "./style.scss";
+import {useCalcContext} from "../../context/CalcContext.jsx";
 
-const Operators = ({dispatch}) => {
+const Operators = () => {
+ 
+ const [state, dispatch] = useCalcContext()
  
  const operators = [
   {

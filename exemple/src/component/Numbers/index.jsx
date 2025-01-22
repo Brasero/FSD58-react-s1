@@ -2,14 +2,14 @@
 import "./style.scss";
 import Number from "../Number/index.jsx";
 
-const Numbers = ({dispatch}) => {
+const Numbers = () => {
  
     const numbersArray = Array(10).fill("");
     
  return (
   <div className="Numbers">
       {
-          numbersArray.map((_, i) => <Number dispatch={dispatch} key={i} num={9-i} />)
+          numbersArray.map((_, i) => <Number key={i} num={9-i} />)
       }
   </div>
  )

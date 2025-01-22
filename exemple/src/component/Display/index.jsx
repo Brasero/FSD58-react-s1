@@ -1,7 +1,11 @@
 // path: exemple/src/component/Display/index.jsx
 import "./style.scss";
+import {useCalcContext} from "../../context/CalcContext.jsx";
 
-const Display = ({display}) => {
+const Display = () => {
+ 
+ const [state] = useCalcContext()
+ const {display} = state
  
  return (
   <div className="Display">

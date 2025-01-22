@@ -1,7 +1,10 @@
 // path: exemple/src/component/Number/index.jsx
 import "./style.scss";
+import { useCalcContext} from "../../context/CalcContext.jsx";
 
-const Number = ({num, dispatch}) => {
+const Number = ({num}) => {
+ 
+ const [state, dispatch] = useCalcContext()
  
  const handleClick = () => {
   dispatch({
