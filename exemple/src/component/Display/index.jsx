@@ -1,13 +1,13 @@
-const Display = ({result, message}) => {
+// path: exemple/src/component/Display/index.jsx
+import "./style.scss";
+
+const Display = () => {
  
- return <>
-  <div>
-   <span>{message}</span>
+ return (
+  <div className="Display">
+    <span>{0}</span>
   </div>
-  <div>
-   <span>{result}</span>
-  </div>
- </>
+ )
 }
 
 export default Display
