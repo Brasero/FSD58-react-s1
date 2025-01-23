@@ -79,4 +79,4 @@ Voici une liste de produits fictifs avec des images obtenues via l'API [Lorem Pi
 
 ---
 
-Ce projet met en œuvre des concepts essentiels comme **Context API**, **useReducer**, et la gestion d'état global pour une application interactive et pratique. 🚀
+Ce projet met en œuvre des concepts essentiels comme **Context API**, **useReducer**, et la gestion d'état global pour une application interactive et pratique.
