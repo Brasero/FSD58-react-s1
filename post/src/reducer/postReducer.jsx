@@ -34,8 +34,11 @@ const postReducer = (state, action) => {
   case postActions.ADD_POST:
    return {
     ...state,
-    posts: state.post.concat([state.post]),
-    post: initialPost
+    posts: state.posts.concat(state.post),
+    post: {
+     id: id++,
+     content: ""
+    }
    }
    
   case postActions.DELETE_POST:
